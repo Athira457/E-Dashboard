@@ -1,0 +1,420 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: inter;
+}
+
+.containerSection{
+  display: flex;
+}
+
+/* sidebar styling starts here */
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #0f1738;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 28px;
+}
+
+.mainMenu .logo{
+  display: flex;
+  padding-left: 20px;
+}
+
+.mainMenu h1{
+  font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+}
+
+.menu-icon{
+  background-color: transparent;
+  margin-left: 60px;
+}
+
+.profile{
+  padding-top: 20px;
+  padding-left: 20px;
+  display: flex;
+}
+
+.profile .selectProfile{
+  background-color: #0F1738;
+  color: white;
+  border: none;
+}
+
+.nav-list{
+  list-style: none;
+}
+
+.nav-list li{
+  padding-bottom: 8%;  
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.nav-list a:hover{
+  filter: drop-shadow(0 0 10px #b5cad1);
+}
+
+.business{
+  display: flex;
+}
+
+.selectBusiness{
+  color: white;
+  background-color: #0F1738;
+  border: none;
+  font-family: inter;
+  font-size: 16px;
+}
+
+.downList{
+  padding-top: 20%;
+}
+
+.downUl{
+  list-style: none;
+}
+
+.downList a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  width: 100%;
+  line-height: 30px;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.downList li{
+  padding-bottom: 8%; 
+  display: flex;
+}
+
+.downList a:hover{
+  filter: drop-shadow(0 0 10px #b5cad1);
+}
+
+/* close button styling */
+.sideMenu .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mainContent{
+  display: flex; 
+  gap: 10px;
+}
+/* hamburger icon styling */
+
+#icon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu ul li {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hamburger-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.hamburger-menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.hamburger-menu ul li a:hover {
+  background-color: #f89292;
+  border-radius: 0;
+}
+
+/* main content styling starts here */
+#contentArea{
+  height: 100%;
+  width: 723px;
+  flex: 1; /* Takes up 2/3 of the available space */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.contentText h2 {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 0px;
+}
+
+/* making document update div with animation */
+.documentDiv{
+  background: linear-gradient(to right,#65a2e7,rgb(233, 107, 206));
+  width: 343px;
+  height: 182px;
+  border-radius: 16px;
+}
+
+.topContent{
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.topContent p{
+  padding: 20px 0 20px 30px;
+}
+
+.downContent{
+  display: flex;
+}
+
+.downContent p{
+  padding: 0 30px 20px 30px;
+}
+
+.statusDiv{
+  width: 343px;
+  height: 173px;
+  border: 1px;
+  border-radius: 16px;
+  background: linear-gradient(105.84deg, #263A8B -1.73%, #1A213F 120.63%);
+  margin-top: 2%;
+  padding-top: 1%;
+  display: flex;
+}
+
+.chart-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.status{
+  padding-top: 15%;
+}
+
+.checkMail{
+  display: flex;
+}
+
+.paymentDiv{
+  padding-top: 40px;
+}
+
+.mailBoxDiv h1, .complianceDiv h1, .taskDiv h1, .paymentDiv h1{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+
+.mailBoxDiv a, .complianceDiv a, .taskDiv a, .paymentDiv a{
+  font-size: 14px;
+}
+
+.reminders, .inprogress, .toapprove{
+  margin-right: 2%;
+  align-items: left;
+  width: 98px;
+}
+
+.reminders p, .inprogress p, .toapprove p{
+  border-right: 2px solid rgb(223, 216, 216);
+}
+
+.MobileHeader, .mobileTask, .mobilePayment{
+  display: none;
+}
+
+/* making responsive while toggle sidebar on tab*/
+@media screen and (min-width: 768px) {
+  #contentArea{
+    padding: 20px;
+  }
+  .contentText {
+    padding-left: 30px; 
+  }
+  .contentText h2 {
+    font-size: 30px;
+  }
+  .tableSection {
+    padding: 10px;
+  }
+  .taskTable, .paymentTable{
+    width: 50%;
+  }
+}
+
+
+/* making responsive on mobile view */
+@media screen and (max-width: 480px) {
+  #menuIcon{
+    display: none;
+  }
+  #icon {
+    display: block;
+    padding-left: 60px;
+  }
+  .MobileHeader{
+    display: flex;   
+    background-color: #0F1738;
+    color: white;
+    padding-left: 4%;
+    width:85%;
+  }
+  .MobileHeader h1{
+    font-size: 6vw;
+  }
+  #contentArea{
+    width: 100%;
+  }
+  .contentText h2{
+    font-size: 6vw;
+  }
+  .mailBoxDiv a{
+    padding-left: 35%;
+  }
+  .complianceDiv a{
+    padding-left: 16%;
+  }
+  .documentDiv, .statusDiv{
+    width: 90%;
+  }
+  .tableSection{
+    height: 100%;
+  }
+  .taskDiv a{
+    padding-left: 55%;
+  }
+  .taskTable, .paymentTable{
+    display: none;
+  }
+  .mobileTask, .mobilePayment{
+    display: block;
+    width: 90%;
+    .catDate{
+      display: flex;
+      gap: 80px;
+    }
+  }
+  .mobilePayment .division{
+    display: flex;
+    gap: 50px;
+    select{
+      width: 100%;
+      border: none;
+    }
+  }
+  .mainContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 10px 20px 10px;
+  }
+
+  .taskTable{
+    border: none;
+    width: 90%;
+  }
+
+}
+
+/* table styling starts here */
+.tableSection {
+  flex: 2; 
+  padding: 20px;
+  background-color: #ffffff; 
+  margin-left: 1px;
+  height: 100%;
+
+}
+
+.tableHead{
+  list-style: none;
+  display: flex;
+}
+
+.tableHead li{
+  padding-right: 20px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgb(230, 218, 218);
+  cursor: pointer;
+}
+.tableHead a {
+  text-decoration: none;
+  color: black;
+  font-family: inter;
+}
+
+.tableHead a .active{
+  text-decoration: underline 2px;
+}
+.tableHead li:hover{
+  text-decoration: underline 2px;
+}
+
+.taskTable, .paymentTable{
+  padding: 8px;
+  width: 644px;
+  height: 340px;
+  border: 2px solid rgb(230, 218, 218);
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+th, td{
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(230, 218, 218);
+}
+
+.headInclude{
+  background: #F8F9FC;
+}
+
+.request-btn{
+  border-radius: 10px;
+  border: none;
+  padding: 6px;
+}
