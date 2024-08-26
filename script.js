@@ -1,8 +1,12 @@
+// sidebar working
+
 function openNav() {
     document.getElementById("sideMenu")
-        .style.width = "300px";
+        .style.width = "280px";
     document.getElementById("contentArea")
-        .style.marginLeft = "300px";
+        .style.marginLeft = "280px";
+    document.getElementById("menuIcon")
+        .style.display = "none";
 }
 
 function closeNav() {
@@ -10,6 +14,8 @@ function closeNav() {
         .style.width = "0";
     document.getElementById("contentArea")
         .style.marginLeft = "0";
+    document.getElementById("menuIcon")
+        .style.display = "flex";
 }
 
 function showContent(content) {
