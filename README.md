@@ -1,1 +1,2 @@
-https://github.com/Athira457/E-Dashboard/index.html
+run url : https://athira457.github.io/E-Dashboard/
+
