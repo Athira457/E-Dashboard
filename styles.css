@@ -216,6 +216,9 @@ body {
 .downContent p{
   padding: 0 30px 20px 30px;
 }
+.downContent a{
+  margin-top: 20px;
+}
 
 .statusDiv{
   width: 343px;
@@ -237,8 +240,8 @@ body {
 
 .donut-chart {
   position: relative;
-	width: 173px;
-  height: 173px;
+	width: 172px;
+  height: 172px;
 	margin: 0 auto 2rem;
 	border-radius: 50%
  }
@@ -506,4 +509,5 @@ th, td{
   border-radius: 10px;
   border: none;
   padding: 6px;
+  cursor: pointer;
 }
