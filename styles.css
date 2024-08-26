@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* style.css */
 body {
   margin: 0;
@@ -178,7 +180,7 @@ body {
 #contentArea{
   height: 100%;
   width: 723px;
-  flex: 1; /* Takes up 2/3 of the available space */
+  flex: 1; 
   padding: 20px;
   background-color: #f9f9f9;
 }
@@ -226,14 +228,101 @@ body {
   display: flex;
 }
 
+/* Donut chart styling */
 .chart-container {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100%;
   position: relative;
+}
+
+.donut-chart {
+  position: relative;
+	width: 173px;
+  height: 173px;
+	margin: 0 auto 2rem;
+	border-radius: 50%
+ }
+
+p.center {
+  background: #263A8B;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  top:0;left:0;bottom:0;right:0;
+  width: 100px;
+  height: 80px;
+  margin: auto;
+  border-radius: 100%;
+  color: white;
+  line-height: 20px;
+  padding: 15% 0 0;
+}
+	
+	
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: poppins;
+    font-size: 1rem;
+  }
+	
+	
+#part1 {
+    transform: rotate(0deg);
+  }
+
+#part1 .circle {
+	background-color: #2b995d;
+	animation: first 1s 1 forwards;
+	}
+	
+	
+#part2 {
+    transform: rotate(100deg);
+  }
+#part2 .circle {
+    background-color: #e97e36;
+    animation: second 1s 1 forwards 1s;
+  }
+#part3 {
+    transform: rotate(250deg);
+}
+	#part3 .circle {
+		background-color: #e0b94d;
+		animation: third 0.5s 1 forwards 2s;
+	}
+	
+	
+/* Animation of donut chart*/
+@keyframes first {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(100deg);}
+}
+	
+@keyframes second {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(150deg);}
+}
+	
+@keyframes third {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(111deg);}
 }
 
 .status{
   padding-top: 15%;
+  padding-left: 10px;
 }
 
 .checkMail{
@@ -271,11 +360,11 @@ body {
 
 /* making responsive while toggle sidebar on tab*/
 @media screen and (min-width: 768px) {
-  #contentArea{
+  #contentArea{ 
     padding: 20px;
   }
   .contentText {
-    padding-left: 30px; 
+    padding-left: 0px; 
   }
   .contentText h2 {
     font-size: 30px;
@@ -284,7 +373,7 @@ body {
     padding: 10px;
   }
   .taskTable, .paymentTable{
-    width: 50%;
+    width: 300px;
   }
 }
 
