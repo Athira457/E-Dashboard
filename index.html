@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Dashboard website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +13,7 @@
         <!-- close button  -->
         <a href="javascript:void(0)"
             class="closeBtn"
-            onclick="closeNav()">×</a>
+            onclick="closeNav()"><img src="images/menu_open.svg"></a>
             <!-- sidebar content starts here -->
         <div class="mainMenu">
             <div class="logo">
@@ -90,11 +87,18 @@
                     </div>
                 </div>
                 <div class="statusDiv">
-                    <img src="images/pie chart.svg" alt="">
+                    <div class="donut-chart-block block"> 
+                        <div class="donut-chart">
+                            <div id="part1" class="portion-block"><div class="circle"></div></div>
+                            <div id="part2" class="portion-block"><div class="circle"></div></div>
+                            <div id="part3" class="portion-block"><div class="circle"></div></div>
+                            <p class="center">21 Applications</p>        
+                        </div>
+                   </div>
                     <u1 class="status">
-                        <li style="color: orange;">Incomplete</li>
-                        <li style="color: rgb(231, 103, 52);">Pending Approval</li>
-                        <li style="color: rgb(9, 158, 9);">Approved</li>
+                        <li style="color: orange;"><span style="color: white;">Incomplete</span></li>
+                        <li style="color: rgb(231, 103, 52);"><span style="color: white;">Pending Approval</span></li>
+                        <li style="color: rgb(9, 158, 9);"><span style="color: white;">Approved</span></li>
                     </u1>
                 </div>
                 <div class="mailBoxDiv">
